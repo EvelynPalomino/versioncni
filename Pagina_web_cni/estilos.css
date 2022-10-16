@@ -1,0 +1,254 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+
+header{
+    height: 100vh;
+    background-image:  linear-gradient(to top, rgba(5, 5, 5, 0.473)0%, rgba(14, 14, 14, 0.438)100%), url(img/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+
+/*menu de navegacion*/
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+header nav{
+    background-color:rgb(179, 179, 179);
+    display:flex;
+    flex-direction: row;
+    text-align:center;
+    padding-bottom: 0;
+    width: 100%;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(41, 27, 167);
+}
+header a:hover{
+    color:rgb(255, 255, 255);
+
+}
+
+
+/*titulo*/
+header .titulo{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+
+}
+
+
+/*Inicio*/
+#subtitulo .subtitulon{
+    text-align: center;
+    padding: 30px 12px;
+}
+.subtitulo{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.contenedor-inicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contenedor-inicio.img{
+    width: 40%;
+}
+.texto-inicio{
+    width: 45%;
+}
+
+
+/*SERVICIOS*/
+#servicios{
+    text-align: center;
+}
+#servicios .container{
+    padding: 50px 12px;
+    
+}
+#servicios h2{
+    margin-top: 0;
+}
+#servicios .container p{
+    display: none;
+    color: white;
+}
+#servicios .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 30px 0px;
+    margin: 40px;
+    border-radius: 15px;
+}
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    , url("img/images.jpg")
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    , url("img/images.jpg")
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    , url("img/images.jpg")
+}
+#servicios .abajo{
+    text-align: center;
+}
+
+
+
+
+/*DOCENTES*/
+#docentes .subdocente{
+    text-align: center;
+    padding: 30px 12px;
+    color: blue;
+}
+#docentes .docente{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+}
+#docentes .docente .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#docentes .director{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;;
+}
+#docentes .director .textod{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*MISION Y VISION*/
+#myv .submyv{
+    text-align: center;
+    padding: 30px 12px;
+    color: blue;
+}
+#myv .mision{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+}
+#myv .mision .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#myv .vision{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;;
+}
+#myv .vision .textod{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*FINAL*/
+#final{
+    background-image: linear-gradient(to top, rgb(48, 207, 208) 0%, rgb(51, 8, 103) 100%);
+    
+}
+#final .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#final .textodos{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (min-width: 850px){
+   /*servicios*/
+    #servicios h3{
+        margin-top: 0;
+    }
+    #servicios .carta{
+        padding: 50px;
+    }
+    #servicios .container p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    #servicios .servicioscarta{
+        display: flex;
+        justify-content: center;
+    }
+    
+}
